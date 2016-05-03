@@ -46,7 +46,6 @@
     _tableView.delegate = self;
     _tableView.tableFooterView = [[UIView alloc] init];
     _tableView.scrollEnabled = NO;
-#warning  禁止tableView被点击
     _tableView.allowsSelection = NO;
     [self.contentView addSubview:_tableView];
 }

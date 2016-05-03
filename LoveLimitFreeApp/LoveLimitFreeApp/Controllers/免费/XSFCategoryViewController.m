@@ -67,7 +67,7 @@
     return cell;
 }
 
-#pragma mark - 点击cell进去对饮的分类
+#pragma mark - 点击cell进去对应的分类
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     XSFCategorySubVC *categoryVC = [[XSFCategorySubVC alloc] init];

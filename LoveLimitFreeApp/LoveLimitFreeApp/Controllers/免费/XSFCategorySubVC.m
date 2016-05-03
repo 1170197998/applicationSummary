@@ -134,7 +134,7 @@
     //***-->[(UITableViewCell *)[sender superview] superview])].row<---可以标记cell的行数
     //cell的上的Button的父视图是contentView,contentView的父视图是cell
     
-    XSFMainModel *model = [_mArrayWithModel objectAtIndex:[_tableView indexPathForCell:([(UITableViewCell *)[sender superview] superview])].row];
+    XSFMainModel *model = [_mArrayWithModel objectAtIndex:[_tableView indexPathForCell:((UITableViewCell *)[[sender superview] superview])].row];
     detailVC.model = model;
     //[self.view.window.rootViewController presentViewController:navDetailVC animated:NO completion:nil];
     [self presentViewController:navDetailVC animated:YES completion:nil];

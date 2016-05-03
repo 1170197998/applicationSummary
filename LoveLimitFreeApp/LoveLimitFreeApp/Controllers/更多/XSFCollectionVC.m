@@ -86,7 +86,7 @@
     _mDictionary = [NSMutableDictionary dictionaryWithContentsOfFile:path];
     NSLog(@"%@",path);
     NSArray *array = [_mDictionary allValues];
-    _mArrayOfKey = [_mDictionary allKeys];
+    _mArrayOfKey = (NSMutableArray *)[_mDictionary allKeys];
     
     for (NSDictionary *dict in array) {
         
