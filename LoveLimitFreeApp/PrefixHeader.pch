@@ -1,0 +1,51 @@
+//
+//  PrefixHeader.pch
+//  LoveLimitFreeApp
+//
+//  Created by admin on 15/10/29.
+//  Copyright (c) 2015年 admin. All rights reserved.
+//
+
+#ifndef LoveLimitFreeApp_PrefixHeader_pch
+#define LoveLimitFreeApp_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <UIKit/UIKit.h>
+#import "XSFFactoryUI.h"
+#import "UIImageView+WebCache.h"//UIImageView添加图片
+#import "MJRefresh.h" //刷新
+#import "SVProgressHUD.h" //加载进度
+#import "XSFMainModel.h" //数据模型
+#import "XSFRequest.h"  //请求数据
+
+//屏幕的长度和宽度
+#define SCR_W [UIScreen mainScreen].bounds.size.width
+#define SCR_H [UIScreen mainScreen].bounds.size.height
+
+//专题界面中每个cell的TableView的cell的高度
+#define TOPIC_CELL_CELL ((SCR_H / 2 - 30 - 40) / 4 - 5)
+
+
+//自定义颜色
+#define RGB(__r,__g,__b) [UIColor colorWithRed:(__r) / 255.0 green:(__g) / 255.0 blue:(__b) / 255.0 alpha:1]
+
+//推荐页面接口
+//http://iappfree.candou.com:8080/free/applications/sales?currency=rmb&page=1&category_id=6014
+#define COMMEND_URL @"http://iappfree.candou.com:8080/free/applications/sales?currency=rmb&page=%d&category_id=%@"
+
+//详情页面接口   找详情的截图
+// http://iappfree.candou.com:8080/free/applications/688743207?currency=rmb
+#define DETAIL_URL @"http://iappfree.candou.com:8080/free/applications/%d?currency=rmb"
+
+//专题界面接口
+//http://1000phone.net:8088/app/iAppFree/api/topic.php?page=1
+#define TOPIC_URL  @"http://1000phone.net:8088/app/iAppFree/api/topic.php?page=%d"
+
+//分类界面接口
+//http://open.candou.com/app/count
+#define CATE_URL @"http://1000phone.net:8088/app/iAppFree/api/appcate.php"
+
+
+#endif
