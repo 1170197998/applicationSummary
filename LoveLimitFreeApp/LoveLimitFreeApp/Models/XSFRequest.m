@@ -22,7 +22,6 @@
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         
         NSLog(@"请求出错 %@",error);
-        
     }];
 }
 

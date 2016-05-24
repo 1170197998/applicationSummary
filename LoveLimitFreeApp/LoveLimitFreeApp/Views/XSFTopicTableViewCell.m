@@ -32,7 +32,6 @@
 -(void)getModel:(XSFTopicModel *)model{
 
     _mArray = model.applications;
-    
     [self creatTabeleView];
     [self addTableCellUI];
 }
@@ -115,6 +114,5 @@
         [_delegate xsfTopIcTableViewCell:self clickRowWithId:self.array[indexPath.row][@"applicationId"]];
     }
 }
-
 
 @end

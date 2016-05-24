@@ -21,11 +21,8 @@
 @property (nonatomic,strong)UIImageView *img;
 @property (nonatomic,strong)UILabel *desc;
 @property (nonatomic,strong)UIImageView *desc_img;
-
 @property (nonatomic,strong)NSArray *array;
-
 @property (nonatomic,weak) id<XSFTopicTableViewCellDelegate>delegate;
-
 -(void)getModel:(XSFTopicModel *)model;
 
 @end
