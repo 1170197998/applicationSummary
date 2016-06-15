@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A7972CA1D10E622009E12B2 /* tingyunApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A7972C91D10E622009E12B2 /* tingyunApp.framework */; };
 		BC296F1F1BF31BE5003C0C68 /* intro_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC296F1E1BF31BE4003C0C68 /* intro_1@2x.png */; };
 		BC296F211BF342B5003C0C68 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC296F201BF342B5003C0C68 /* UIKit.framework */; };
 		BC296F231BF345EC003C0C68 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC296F221BF345EC003C0C68 /* CoreImage.framework */; };
@@ -121,6 +122,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9A7972C91D10E622009E12B2 /* tingyunApp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = tingyunApp.framework; sourceTree = "<group>"; };
 		BC296F1E1BF31BE4003C0C68 /* intro_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "intro_1@2x.png"; sourceTree = "<group>"; };
 		BC296F201BF342B5003C0C68 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BC296F221BF345EC003C0C68 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
@@ -322,6 +324,7 @@
 				BC8CE8561BE5FB3200020817 /* libUMSocial_Sdk_3.3.6.a in Frameworks */,
 				BC8CE7F81BE5F60000020817 /* libz.dylib in Frameworks */,
 				BC8CE7F61BE5F5F200020817 /* libstdc++.6.0.9.dylib in Frameworks */,
+				9A7972CA1D10E622009E12B2 /* tingyunApp.framework in Frameworks */,
 				BC8CE8601BE5FB3200020817 /* TencentOpenAPI.framework in Frameworks */,
 				BC8CE7F41BE5F5E400020817 /* SystemConfiguration.framework in Frameworks */,
 				BC8CE7F21BE5F5D900020817 /* CoreTelephony.framework in Frameworks */,
@@ -585,6 +588,7 @@
 		BC8EE5921BE1EBDE0019385C = {
 			isa = PBXGroup;
 			children = (
+				9A7972C91D10E622009E12B2 /* tingyunApp.framework */,
 				BC296F221BF345EC003C0C68 /* CoreImage.framework */,
 				BC296F201BF342B5003C0C68 /* UIKit.framework */,
 				BC8CE8631BE6022800020817 /* relyLibrary */,
@@ -848,7 +852,7 @@
 				TargetAttributes = {
 					BC8EE59A1BE1EBDE0019385C = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = AJ8P8F2GEW;
+						DevelopmentTeam = 9ZL2LCLWLH;
 					};
 					BC8EE5B31BE1EBDE0019385C = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -1111,15 +1115,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Mingyu Zhou (AJ8P8F2GEW)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Mingyu Zhou (AJ8P8F2GEW)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LoveLimitFreeApp/ThirdLibrary/umeng_ios_social_sdk_3.3.6_custom3/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
 				INFOPLIST_FILE = LoveLimitFreeApp/Info.plist;
 				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1129,7 +1136,7 @@
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5c5501ca-bcc1-474b-9cc8-c7968b7ac8a9";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 				VALID_ARCHS = "armv7 armv7s";
 			};
@@ -1139,15 +1146,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Mingyu Zhou (AJ8P8F2GEW)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Mingyu Zhou (AJ8P8F2GEW)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LoveLimitFreeApp/ThirdLibrary/umeng_ios_social_sdk_3.3.6_custom3/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
 				INFOPLIST_FILE = LoveLimitFreeApp/Info.plist;
 				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1156,7 +1166,7 @@
 					"$(PROJECT_DIR)/LoveLimitFreeApp/ThirdLibrary/ZBarSDK",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5c5501ca-bcc1-474b-9cc8-c7968b7ac8a9";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 				VALID_ARCHS = "armv7 armv7s";
 			};
