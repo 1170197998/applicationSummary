@@ -44,12 +44,12 @@
 {
     [_headerView endRefreshing];
     [_footerView endRefreshing];
-
+    
     NSString *path = [NSString stringWithFormat:COMMEND_URL,_page,[NSString stringWithFormat:@"%d",6014]];
     [XSFRequest RequestDataWithPath:path Finish:^(NSDictionary *dictinary) {
         
         NSArray *array = dictinary[@"applications"];
-
+        
         if (_page == 1) {
             [_mArrayWithModel removeAllObjects];
         }

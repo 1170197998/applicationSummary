@@ -54,7 +54,7 @@
 {
     NSString *path = [NSString stringWithFormat:DETAIL_URL,[_model.applicationId intValue]];
     [XSFRequest RequestDataWithPath:path Finish:^(NSDictionary *dictinary) {
-
+        
         for (NSDictionary *dict in dictinary[@"photos"]) {
             
             [_mArraysmallUrl addObject:dict[@"smallUrl"]];
@@ -110,7 +110,7 @@
         UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tabDetailGes:)];
         [imageView addGestureRecognizer:tap];
     }
-   
+    
     //文字说明
     _textView = [[UITextView alloc] initWithFrame:CGRectMake(0, _scrollView.frame.size.height + _scrollView.frame.origin.y + 10, _backgroundView.frame.size.width, _backgroundView.frame.size.height - (_scrollView.frame.size.height + _scrollView.frame.origin.y + 50))];
     _textView.backgroundColor = RGB(246, 246, 246);
@@ -153,7 +153,7 @@
             if (sender.selected == NO) {
                 sender.selected = YES;
                 sender.userInteractionEnabled = NO;
-
+                
                 //写入沙盒路径(applicationId作为字典的键,避免重复收藏)
                 NSString *path = [NSString stringWithFormat:@"%@/Documents/collections.plist",NSHomeDirectory()];
                 NSMutableDictionary *mDictionary = [NSMutableDictionary dictionaryWithContentsOfFile:path];
@@ -175,8 +175,8 @@
         case 202:{
             NSMutableString *mStringPathReqult = [NSMutableString stringWithString:_model.iconUrl];
             //修改为苹果商店链接
-                [mStringPathReqult deleteCharactersInRange:NSMakeRange(0, 7)];
-                [mStringPathReqult insertString:@"http://www.apple.com/" atIndex:0];
+            [mStringPathReqult deleteCharactersInRange:NSMakeRange(0, 7)];
+            [mStringPathReqult insertString:@"http://www.apple.com/" atIndex:0];
             [[UIApplication sharedApplication] openURL:[NSURL URLWithString:mStringPathReqult]];
         }   break;
     }

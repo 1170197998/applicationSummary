@@ -47,7 +47,7 @@
 - (void)creatTabBarItems
 {
     _mArrayButtomButton = [NSMutableArray arrayWithCapacity:0];
-
+    
     //创建底部按钮背景色
     UIView *viewBottom = [XSFFactoryUI creatViewWithFrame:CGRectMake(0, SCR_H - 45, SCR_W, 45)];
     viewBottom.backgroundColor = RGB(246, 246, 246);
